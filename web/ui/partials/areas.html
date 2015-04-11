@@ -17,26 +17,26 @@
                     <div class="col">
                         <div class="form-group">
                             <label>Name</label>
-                            <input ng-model="name" class="form-control"/>
+                            <input ng-model="vm.item.name" class="form-control"/>
                         </div>
                         
                         <div class="form-group">
                             <label>Capacity (number of trees)</label>
-                            <input type="number" ng-model="capacity" class="form-control"/>
+                            <input type="number" ng-model="vm.item.capacity" class="form-control"/>
                         </div>
                         
                         <div class="form-group">
                             <label>Latitude</label>
-                            <input ng-model="latitude" class="form-control"/>
+                            <input ng-model="vm.item.latitude" class="form-control"/>
                         </div>
                         
                         <div class="form-group">
                             <label>Longtitude</label>
-                            <input ng-model="longtitude" class="form-control"/>
+                            <input ng-model="vm.item.longtitude" class="form-control"/>
                         </div>
                         
                         <div class="form-group">
-                            <button class="btn btn-primary">Save</button>
+                            <button class="btn btn-primary" ng-click="vm.save()">Save</button>
                         </div>
                         
                     </div>
