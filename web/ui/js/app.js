@@ -4,12 +4,7 @@
 var myApp = angular.module('myApp',
     [   'myApp.filters',
         'myApp.directives', // custom directives
-        'ngGrid', // angular grid
-        'ui', // angular ui
         'ngSanitize', // for html-bind in ckeditor
-        'ui.ace', // ace code editor
-        'ui.bootstrap', // jquery ui bootstrap
-        '$strap.directives' // angular strap
     ]);
 
 
@@ -23,7 +18,7 @@ myApp.config(['$routeProvider', '$locationProvider', '$httpProvider', function (
     // $locationProvider.html5Mode(true);
 
     $routeProvider.when('/', {
-        templateUrl:'partials/home.html'
+        templateUrl:'partials/areas.html', controller: 'AreasController', controllerAs: 'vm'
     });
 
     $routeProvider.when('/fs2', {
