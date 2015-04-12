@@ -18,13 +18,22 @@ myApp.config(['$routeProvider', '$locationProvider', '$httpProvider', function (
     // TODO use html5 *no hash) where possible
     // $locationProvider.html5Mode(true);
 
-    $routeProvider.when('/', {
+    $routeProvider.when('/area', {
         templateUrl:'partials/area-list.html', controller: 'AreaListController', controllerAs: 'vm'
     });
 
-    $routeProvider.when('/:id', {
+    $routeProvider.when('/area/:id', {
         templateUrl:'partials/area-detail.html', controller: 'AreaDetailController', controllerAs: 'vm'
     });
+    
+    $routeProvider.when('/seeds', {
+        templateUrl:'partials/seeds-list.html', controller: 'SeedsListController', controllerAs: 'vm'
+    });
+    
+    $routeProvider.when('/seeds/:id', {
+        templateUrl:'partials/seeds-detail.html', controller: 'SeedsDetailController', controllerAs: 'vm'
+    });
+    
 
     // by default, redirect to site root
     $routeProvider.otherwise({

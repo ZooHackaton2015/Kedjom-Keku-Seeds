@@ -1,45 +1,50 @@
 <div class="container fade-in">
 
+
     <div>
 
         <div class="jumbotron">
+
 
             <div class="page-header">
                 <h1>Kedjom keku seeds</h1>                
             </div>
             
             <form>
-                <h3>Add an area</h3>
+                <h3>Add an tree</h3>
                 <div class="row">
                     <div class="row-col" style="width: 300px;">
                     <div class="col">
                         <div class="form-group">
-                            <label>Name</label>
-                            <input ng-model="vm.item.name" class="form-control"/>
+                            <label>Area</label>
+                            
+                            <select ng-model="vm.item.Zone"
+                                    ng-options="">
+                                
+                                
+                            </select>
+                           
+                          
                         </div>
                         
                         <div class="form-group">
-                            <label>Description</label>
-                            <input ng-model="vm.item.Description" class="form-control"/>
+                            <label>Donor</label>
+                            <input ng-model="vm.item.Donor" class="form-control"/>
                         </div>
                         
                         <div class="form-group">
-                            <label>Capacity (number of trees)</label>
-                            <input type="number" ng-model="vm.item.capacity" class="form-control"/>
+                            <label>Footprint</label>
+                            <input ng-disabled="vm.item.treesSeed != 1" ng-model="vm.item.Footprint" class="form-control"/>
                         </div>
                         
                         <div class="form-group">
-                            <label>Latitude</label>
-                            <input ng-model="vm.item.latitude" class="form-control"/>
+                            <label>Number of trees to seed</label>
+                            <input type="number" ng-model="vm.item.treesSeed" class="form-control"/>
                         </div>
+                      
                         
                         <div class="form-group">
-                            <label>Longtitude</label>
-                            <input ng-model="vm.item.longtitude" class="form-control"/>
-                        </div>
-                        
-                        <div class="form-group">
-                            <button class="btn btn-primary" ng-click="vm.save()">Save area</button>
+                            <button class="btn btn-primary" ng-click="vm.save()">Seed trees and make world better.</button>
                         </div>
                         
                     </div>
