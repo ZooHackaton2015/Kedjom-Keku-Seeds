@@ -9,7 +9,7 @@
                     <div class="col">
                         <div class="form-group">
                             <label>Name</label>
-                            <input ng-model="vm.item.name" class="form-control"/>
+                            <input ng-model="vm.item.Name" class="form-control"/>
                         </div>
                         
                         <div class="form-group">
@@ -19,17 +19,22 @@
                         
                         <div class="form-group">
                             <label>Capacity (number of trees)</label>
-                            <input type="number" ng-model="vm.item.capacity" class="form-control"/>
+                            <input type="number" ng-model="vm.item.Capacity" class="form-control"/>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label>Used (number of trees already planted)</label>
+                            <input type="number" ng-model="vm.item.Used" class="form-control"/>
                         </div>
                         
                         <div class="form-group">
                             <label>Latitude</label>
-                            <input ng-model="vm.item.latitude" class="form-control"/>
+                            <input ng-model="vm.item._latitude" class="form-control"/>
                         </div>
                         
                         <div class="form-group">
-                            <label>Longtitude</label>
-                            <input ng-model="vm.item.longtitude" class="form-control"/>
+                            <label>Longitude</label>
+                            <input ng-model="vm.item._longitude" class="form-control"/>
                         </div>
                         
                         <div class="form-group">
