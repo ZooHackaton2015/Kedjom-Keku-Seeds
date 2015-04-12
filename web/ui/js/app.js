@@ -3,6 +3,7 @@
 // declare top-level module which depends on filters,and services
 var myApp = angular.module('myApp',
     [   'ngRoute',
+        'ngResource',
         'myApp.filters',
         'myApp.directives', // custom directives
     ]);
