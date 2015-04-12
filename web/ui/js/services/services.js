@@ -15,6 +15,14 @@ myApp.factory('areasResourceService', function(config, $resource) {
     return res;    
 })
 
+myApp.factory('seedResourceService', function(config, $resource) {    
+    var res = $resource(config.baseUrl, {
+        //expecting someting like https://www.googleapis.com/fusiontables/v2/query?sql=SELECT * FROM 1KxVV0wQXhxhMScSDuqr-0Ebf0YEt4m4xzVplKd4&
+        query: {method: 'GET', url: config.baseUrl + 'query'}
+    });
+    return res;    
+})
+
 // simple stub that could use a lot of work...
 myApp.factory('RESTService',
     function ($http) {
