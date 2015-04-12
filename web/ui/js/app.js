@@ -4,6 +4,7 @@
 var myApp = angular.module('myApp',
     [   'ngRoute',
         'ngResource',
+        'uiGmapgoogle-maps',
         'myApp.filters',
         'myApp.directives', // custom directives
     ]);
