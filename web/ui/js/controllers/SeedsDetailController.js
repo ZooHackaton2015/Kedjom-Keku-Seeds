@@ -5,6 +5,8 @@ angular.module('myApp').controller('SeedsDetailController', function($log) {
     var that = this;
     var item = this.item = {};
     
+    
+    
     this.save = function(){
         
         
