@@ -2,7 +2,6 @@ angular.module('myApp').controller('AreasController', function() {
     console.log('area controller loaded');
     
     var that = this;
-    this.item = {};
     var item = this.item = {};
     
     this.save = function(){
