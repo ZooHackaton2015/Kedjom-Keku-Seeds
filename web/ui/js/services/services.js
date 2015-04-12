@@ -1,5 +1,12 @@
 'use strict';
 
+myApp.factory('config', function() {
+    return {
+        baseUrl: 'https://www.googleapis.com/fusiontables/v2/',
+        apiKey: ''
+    }
+})
+
 // simple stub that could use a lot of work...
 myApp.factory('RESTService',
     function ($http) {

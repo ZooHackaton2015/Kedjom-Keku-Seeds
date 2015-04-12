@@ -21,7 +21,7 @@ myApp.config(['$routeProvider', '$locationProvider', '$httpProvider', function (
         templateUrl:'partials/area-list.html', controller: 'AreaListController', controllerAs: 'vm'
     });
 
-    $routeProvider.when('/', {
+    $routeProvider.when('/:id', {
         templateUrl:'partials/area-detail.html', controller: 'AreaDetailController', controllerAs: 'vm'
     });
 

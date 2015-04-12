@@ -1,5 +1,5 @@
-angular.module('myApp').controller('AreaDetailController', function() {
-    console.log('area controller loaded');
+angular.module('myApp').controller('AreaDetailController', function(config) {
+    console.log('area controller loaded', config);
     
     var that = this;
     this.item = {};
