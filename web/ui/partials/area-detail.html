@@ -4,48 +4,57 @@
     <div>
             <form>
                 <h3>Add an area</h3>
-                <div class="row">
-                    <div class="row-col" style="width: 300px;">
-                    <div class="col">
-                        <div class="form-group">
-                            <label>Name</label>
-                            <input ng-model="vm.item.Name" class="form-control"/>
+                
+                <div class="col">
+
+                    <div class="row">
+                        <div class="row-col" style="width: 300px;">
+                        <div class="col">
+                            <div class="form-group">
+                                <label>Name</label>
+                                <input ng-model="vm.item.Name" class="form-control"/>
+                            </div>
+
+                            <div class="form-group">
+                                <label>Description</label>
+                                <input ng-model="vm.item.Description" class="form-control"/>
+                            </div>
+
+                            <div class="form-group">
+                                <label>Capacity (number of trees)</label>
+                                <input type="number" ng-model="vm.item.Capacity" class="form-control"/>
+                            </div>
+
+                            <div class="form-group">
+                                <label>Used (number of trees already planted)</label>
+                                <input type="number" ng-model="vm.item.Used" class="form-control"/>
+                            </div>
+
+                            <div class="form-group">
+                                <label>Latitude</label>
+                                <input ng-model="vm.item._latitude" class="form-control"/>
+                            </div>
+
+                            <div class="form-group">
+                                <label>Longitude</label>
+                                <input ng-model="vm.item._longitude" class="form-control"/>
+                            </div>
+
+                            <div class="form-group">
+                                <button class="btn btn-primary" ng-click="vm.save()">Save</button>
+                            </div>
+
                         </div>
-                        
-                        <div class="form-group">
-                            <label>Description</label>
-                            <input ng-model="vm.item.Description" class="form-control"/>
-                        </div>
-                        
-                        <div class="form-group">
-                            <label>Capacity (number of trees)</label>
-                            <input type="number" ng-model="vm.item.Capacity" class="form-control"/>
-                        </div>
-                        
-                        <div class="form-group">
-                            <label>Used (number of trees already planted)</label>
-                            <input type="number" ng-model="vm.item.Used" class="form-control"/>
-                        </div>
-                        
-                        <div class="form-group">
-                            <label>Latitude</label>
-                            <input ng-model="vm.item._latitude" class="form-control"/>
-                        </div>
-                        
-                        <div class="form-group">
-                            <label>Longitude</label>
-                            <input ng-model="vm.item._longitude" class="form-control"/>
-                        </div>
-                        
-                        <div class="form-group">
-                            <button class="btn btn-primary" ng-click="vm.save()">Save</button>
-                        </div>
-                        
+                      </div>
                     </div>
-                  </div>
                 </div>
                 
-                <ui-gmap-google-map center='vm.map.center' zoom='vm.map.zoom'></ui-gmap-google-map>
+                <div class="col">
+                    <div class="row">
+                        <ui-gmap-google-map center='vm.map.center' zoom='vm.map.zoom'></ui-gmap-google-map>
+                    </div>
+                </div>
+                
             </form>
 
     </div>

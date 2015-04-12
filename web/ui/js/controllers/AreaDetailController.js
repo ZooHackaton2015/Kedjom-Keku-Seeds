@@ -25,7 +25,7 @@ angular.module('myApp').controller('AreaDetailController', function($scope, conf
       });
       
       $scope.$watch(angular.bind(this, function () {
-        return this.item._longtitude; // `this` IS the `this` above!!
+        return this.item._longitude; // `this` IS the `this` above!!
       }), function (newVal, oldVal) {
         updateMap();
       });
