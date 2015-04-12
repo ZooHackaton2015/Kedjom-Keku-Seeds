@@ -18,7 +18,11 @@ myApp.config(['$routeProvider', '$locationProvider', '$httpProvider', function (
     // $locationProvider.html5Mode(true);
 
     $routeProvider.when('/', {
-        templateUrl:'partials/areas.html', controller: 'AreasController', controllerAs: 'vm'
+        templateUrl:'partials/area-list.html', controller: 'AreaListController', controllerAs: 'vm'
+    });
+
+    $routeProvider.when('/', {
+        templateUrl:'partials/area-detail.html', controller: 'AreaDetailController', controllerAs: 'vm'
     });
 
     // by default, redirect to site root
