@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2" xmlns:gx="http://www.google.com/kml/ext/2.2" xmlns:kml="http://www.opengis.net/kml/2.2" xmlns:atom="http://www.w3.org/2005/Atom">
+<Document>
+	<name>Green2.kml</name>
+	<StyleMap id="msn_ylw-pushpin">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#sn_ylw-pushpin</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#sh_ylw-pushpin</styleUrl>
+		</Pair>
+	</StyleMap>
+	<Style id="sh_ylw-pushpin">
+		<IconStyle>
+			<scale>1.3</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+			</Icon>
+			<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
+		</IconStyle>
+		<LineStyle>
+			<color>ff005801</color>
+		</LineStyle>
+		<PolyStyle>
+			<color>800dff00</color>
+		</PolyStyle>
+	</Style>
+	<Style id="sn_ylw-pushpin">
+		<IconStyle>
+			<scale>1.1</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+			</Icon>
+			<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
+		</IconStyle>
+		<LineStyle>
+			<color>ff005801</color>
+		</LineStyle>
+		<PolyStyle>
+			<color>800dff00</color>
+		</PolyStyle>
+	</Style>
+	<Placemark>
+		<name>Green2</name>
+		<styleUrl>#msn_ylw-pushpin</styleUrl>
+		<Polygon>
+			<tessellate>1</tessellate>
+			<outerBoundaryIs>
+				<LinearRing>
+					<coordinates>
+						10.29644141831808,6.063656022531787,0 10.2958924732027,6.062454681224819,0 10.29674867047814,6.062067712927382,0 10.29749770695908,6.062621793138781,0 10.29776057178211,6.062198686418571,0 10.29796152390269,6.061754003400869,0 10.29867500834594,6.061649755210498,0 10.2991433312164,6.063137864540919,0 10.30003437140391,6.063869181723007,0 10.29995065686206,6.064383536714639,0 10.29941764718974,6.064657178112938,0 10.29870309330226,6.064612338799769,0 10.29760422004991,6.065115633542717,0 10.29691350227057,6.064838096352963,0 10.29644141831808,6.063656022531787,0 
+					</coordinates>
+				</LinearRing>
+			</outerBoundaryIs>
+		</Polygon>
+	</Placemark>
+</Document>
+</kml>
