@@ -3,7 +3,7 @@
 myApp.factory('config', function() {
     return {
         baseUrl: 'https://www.googleapis.com/fusiontables/v2/',
-        apiKey: ''
+        apiKey: 'AIzaSyC_w6OQRkFGoZytplhUo1qmgA8JRVc78Xg'
     }
 })
 
@@ -16,10 +16,29 @@ myApp.factory('areasResourceService', function(config, $resource) {
 })
 
 myApp.factory('seedResourceService', function(config, $resource) {    
-    var res = $resource(config.baseUrl, {
-        //expecting someting like https://www.googleapis.com/fusiontables/v2/query?sql=SELECT * FROM 1KxVV0wQXhxhMScSDuqr-0Ebf0YEt4m4xzVplKd4&
-        query: {method: 'GET', url: config.baseUrl + 'query'}
+    var res = $resource(config.baseUrl , null, {
+        
+        getAll: {
+            method: 'GET',
+            url: config.baseUrl + 'query?sql=SELECT * FROM 1R3md7TcGUMISr7eTo01XUp-TMhSPCJoIS0GZT3Le&key=AIzaSyC_w6OQRkFGoZytplhUo1qmgA8JRVc78Xg',
+            
+            isArray: false
+        }
+        //expecting someting like https://www.googleapis.com/fusiontables/v2/query?sql=SELECT * FROM &
+        /*
+        url: config.baseUrl + 'query',
+        method: 'GET',
+        
+        params: { 
+                sql : 'SELECT * FROM 1R3md7TcGUMISr7eTo01XUp-TMhSPCJoIS0GZT3Le',
+                key: config.apiKey 
+            }
+            */
+           
+       
+           
     });
+    
     return res;    
 })
 
