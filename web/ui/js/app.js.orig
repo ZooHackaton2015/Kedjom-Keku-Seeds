@@ -4,7 +4,6 @@
 var myApp = angular.module('myApp',
     [   'ngRoute',
         'ngResource',
-        'uiGmapgoogle-maps',
         'myApp.filters',
         'myApp.directives', // custom directives
     ]);
@@ -23,7 +22,11 @@ myApp.config(['$routeProvider', '$locationProvider', '$httpProvider', function (
         templateUrl:'partials/area-list.html', controller: 'AreaListController', controllerAs: 'vm'
     });
 
+<<<<<<< Updated upstream
+    $routeProvider.when('/:id', {
+=======
     $routeProvider.when('/area/:id', {
+>>>>>>> Stashed changes
         templateUrl:'partials/area-detail.html', controller: 'AreaDetailController', controllerAs: 'vm'
     });
     
