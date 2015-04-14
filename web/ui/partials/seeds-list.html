@@ -1,0 +1,23 @@
+<pre ng-if="0">
+{{rows | json}}
+</pre>
+
+<table>
+    
+    <tr>
+        <th ng-repeat="n in columns">
+            {{n}}
+        </th>
+        
+    </tr>
+    
+    <tr>
+        <tr ng-repeat="row in rows track by $index">
+            
+            <td ng-repeat="td in row track by $index">
+                 {{td | json }}
+            </td>
+        </tr>
+    </tr>
+    
+</table>

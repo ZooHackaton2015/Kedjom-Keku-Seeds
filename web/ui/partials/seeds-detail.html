@@ -20,11 +20,18 @@
                             
                             <select ng-model="vm.item.Zone"
                                    >
-                                
+                                     <option>Bobova lesní školka</option>
+                                     <option>Peopova lesní školka</option>
+                                     <option>Jardova lesní školka</option>
                                 
                             </select>
                            
                           
+                        </div>
+                        
+                          <div class="form-group">
+                            <label>Number of trees to seed</label>
+                            <input type="number" ng-model="vm.item.treesSeed" class="form-control"/>
                         </div>
                         
                         <div class="form-group">
@@ -37,10 +44,7 @@
                             <input ng-disabled="vm.item.treesSeed != 1" ng-model="vm.item.Footprint" class="form-control"/>
                         </div>
                         
-                        <div class="form-group">
-                            <label>Number of trees to seed</label>
-                            <input type="number" ng-model="vm.item.treesSeed" class="form-control"/>
-                        </div>
+                      
                       
                         
                         <div class="form-group">
